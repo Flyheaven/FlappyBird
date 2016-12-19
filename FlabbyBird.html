@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flappy Bird</title>
+	<style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+
+	#score{
+		text-align: center;
+		font-size:20px;
+		font-weight: bold;
+		font-family: "Microsoft YaHei";  /*设置字体为微软雅黑*/
+		margin-top: 10px;
+
+	}
+	#wrap{
+		position: relative;
+	}
+	#canvas{
+		position: absolute;
+		left: 50%;
+		margin-left: -144px;
+		margin-top: 10px;
+		background-color: rgb(187, 173, 160);
+	}
+	</style>
+</head>
+
+<body>
+	<div id="score">Score:  0</div> 
+	<div id="wrap">
+		<canvas id="canvas" width=288 height=512></canvas>
+	</div>
+	<script type="text/javascript" src="controlBird.js"></script>
+</body>
+</html>
